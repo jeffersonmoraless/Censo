@@ -1,0 +1,169 @@
+.containerExt{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    /******************************** regras de estilo da caixa do login **********************************/
+    max-width: 500px;
+    margin:auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /*min-height: 130px;
+    min-width: 200px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*
+    */
+    /*
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    */
+    
+    border-radius: 15px;
+    border: 2px solid  #044680;
+    box-shadow: 5px 4px 5px 5px rgba(164, 164, 164, 0.2); 
+    
+    
+}
+img{
+    position: initial;
+}
+
+.campo{
+    /********************************** caixa do imput e do label *****************************************/
+    position: relative;
+    
+}
+.campo > .input{
+    /****************************************** input *****************************************************/
+    padding: 8px;
+    width: 370px;
+    border-radius: 7px;
+    border: 2px solid #476684;
+   /* background-color:#595959;*/
+    transition: all.3s ease-in-out;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+/*Quando o navegador sugere um dado para preencher um campo de entrada, ele define um background 
+(cor de fundo) padrão para o input, que pode sobrescrever as cores personalizadas que definimos.
+Para evitar que isso aconteça e garantir que nossas cores selecionadas sejam aplicadas 
+corretamente, podemos adicionar as seguintes regras de estilo abaixo*/
+
+input:-webkit-autofill,             /*aplica-se campo de texto que seja prenchido automaticamente*/
+textarea:-webkit-autofill,          /*aplica-se ao texto que seja prenchido automaticamente*/
+select:-webkit-autofill {           /*aplica-se quando elemento de seleção seja prenchido automaticamente*/
+    -webkit-text-fill-color: #000000;  /*defini a cor do texto que foi prenchido automaticamente para preto*/
+    -webkit-box-shadow: 0 0 0px 1000px white inset ; /*Esta propriedade cria uma sombra na parte interna do elemento, simulando um fundo branco. */
+}
+
+.campo > .label{
+    /********************************************* label *********************************************/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:15px;
+    pointer-events: none;
+    color:black;
+}
+.campo > .input::placeholder{
+    /*************************************** place holder ********************************************/
+    opacity: 0;
+    
+}
+/********************************************* eventos ************************************************/
+.campo > .input:focus::placeholder{
+    /*quando der foco no input o placeholder deixar de ser tranparente 'opacity:0' e passa a ser 
+    exibido 'opacity:1' */
+    opacity: 1;
+    color: rgb(134, 134, 134);
+    transition: all.3s ease-in-out;
+}
+.campo > .input:focus + .label,
+.campo > .input:not(:placeholder-shown)+.label{
+    /* quando der foco no input e o placeholder não estiver sendo exibido o label se move 5px para
+    se alinhar a linha da borda do input*/
+    top:5px;
+    left: 16px;
+    font-size: 12px;
+    padding: 0px 8px;
+    color:black;
+    background-color:white;
+    transition: all.3s ease-in-out;
+    
+    
+}
+
+.campo > .input:hover,
+.campo > .input:focus,
+.campo > .input:not(:placeholder-shown){
+   /*quando passar cursor sobre input borda ficar green com 2px*/
+    border:2px solid #4766848f !important;
+    transition: all.3s ease-in-out;
+}
+
+.campoButton{
+    /*caixa button*/
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.campoButton> button{
+    /*propiedades button*/
+    background-color:  #476684;
+    border: none;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    margin-bottom:15px;
+    
+}
+.campoButton> button:hover{
+    /*eventos button*/
+    box-shadow: 0px 3px 5px 0px #044680;
+    cursor: pointer;
+    font-weight: bold;
+}
+.campoButton> button:active{
+    /*quando clicar button*/
+    position: relative;
+    top:2px;
+    box-shadow: 0px 3px 5px 0px #044680b4;
+}
+.link{
+    
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    
+}
+.account, .forget {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size:0.8em;
+    color: #044680b4;
+}
+a{
+    color:#043e72;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
