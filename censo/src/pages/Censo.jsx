@@ -3,6 +3,7 @@ import styles from "./Censo.module.css";
 import santaScasas from "../img/santaScasa.webp";
 import proximo from "../img/pp.png";
 import voltar from "../img/voltar.png";
+import Abas from "../components/Abas";
 const Censo = () => {
   return (
     <div className={styles.main}>
@@ -70,48 +71,7 @@ const Censo = () => {
               </tr>
             </tfoot>
           </table>
-          <div className={styles.cx_aba}>
-            <div className={styles.prim}>
-              <a href="#">
-                <p>Pronto Atendimento</p>
-              </a>
-            </div>
-            <div className={styles.intern}>
-              <a href="#">
-                <p>Uti Adulto</p>
-              </a>{" "}
-            </div>
-            <div className={styles.intern}>
-              <a href="#">
-                <p>Maternidade</p>
-              </a>{" "}
-            </div>
-            <div className={styles.intern}>
-              <a href="#">
-                <p>Pré Parto</p>
-              </a>{" "}
-            </div>
-            <div className={styles.intern}>
-              <a href="#">
-                <p>Particular 2</p>
-              </a>
-            </div>
-            <div className={styles.intern}>
-              <a href="#">
-                <p>Particular 3</p>
-              </a>{" "}
-            </div>
-            <div className={styles.intern}>
-              <a href="#">
-                <p>Uti Neonatal</p>
-              </a>
-            </div>
-            <div className={styles.ultima}>
-              <a href="#">
-                <p>Pediatria</p>
-              </a>
-            </div>
-          </div>
+          <Abas/>
         </div>
       </div>
 

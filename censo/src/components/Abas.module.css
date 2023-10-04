@@ -1,0 +1,47 @@
+.cx_aba{
+    border:1px solid black;
+    border-top: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    
+}
+.prim{
+   width: 82.5px;
+   background-color: #a9c8d6de;
+   font-size: 0.8em;
+   text-align: center;
+   border-bottom-left-radius: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.ultima{
+    width: 82.5px;
+    background-color: #a9c8d6de;
+    font-size: 0.8em;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intern{
+    width: 82.5px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #a9c8d6de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intern > a:hover, .prim > a:hover, .ultima > a:hover {
+    
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1em;
+}
+.intern:hover, .prim:hover, .ultima:hover {
+    
+    background-color: #a9c8d6fe;
+}

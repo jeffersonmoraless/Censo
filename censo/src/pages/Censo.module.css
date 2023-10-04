@@ -176,38 +176,4 @@ ul{
     height: 35px;
 }
 
-.cx_aba{
-    border:1px solid black;
-    border-top: none;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    display: flex;
-}
-.prim{
-   width: 82.5px;
-   background-color: #a9c8d6;
-   font-size: 0.8em;
-   text-align: center;
-   border-bottom-left-radius: 15px;
-
-}
-.ultima{
-    width: 82.5px;
-    background-color: #a9c8d6;
-    font-size: 0.8em;
-    text-align: center;
-    border-bottom-right-radius: 15px;
-    
-}
-.intern{
-    width: 82.5px;
-    font-size: 0.8em;
-    text-align: center;
-    background-color: #a9c8d6;
-    
-    
-    
-
-
-}
 
