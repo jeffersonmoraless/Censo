@@ -1,46 +1,49 @@
 import styles from './Abas.module.css';
-const Abas = () => {
+const Abas = ({aba,setAba}) => {
+  const changeAba =(iten)=>{
+    setAba(iten)
+  }
     return (
         <div className={styles.cx_aba}>
-            <div className={styles.prim}>
-              <a href="#">
+            <div className={styles.prim} onClick={()=>changeAba(1)}>
+              
                 <p>Pronto Atendimento</p>
-              </a>
+              
             </div>
-            <div className={styles.intern}>
-              <a href="#">
+            <div className={styles.intern} onClick={()=>changeAba(2)}>
+              
                 <p>Uti Adulto</p>
-              </a>{" "}
+              
             </div>
-            <div className={styles.intern}>
-              <a href="#">
+            <div className={styles.intern} onClick={()=>changeAba(3)}>
+              
                 <p>Maternidade</p>
-              </a>{" "}
+              
             </div>
-            <div className={styles.intern}>
-              <a href="#">
+            <div className={styles.intern} onClick={()=>changeAba(4)}>
+              
                 <p>Pré Parto</p>
-              </a>{" "}
+              
             </div>
-            <div className={styles.intern}>
-              <a href="#">
+            <div className={styles.intern} onClick={()=>changeAba(5)}>
+              
                 <p>Particular 2</p>
-              </a>
+              
             </div>
-            <div className={styles.intern}>
-              <a href="#">
+            <div className={styles.intern} onClick={()=>changeAba(6)}>
+              
                 <p>Particular 3</p>
-              </a>{" "}
+              
             </div>
-            <div className={styles.intern}>
-              <a href="#">
+            <div className={styles.intern} onClick={()=>changeAba(7)}>
+              
                 <p>Uti Neonatal</p>
-              </a>
+              
             </div>
-            <div className={styles.ultima}>
-              <a href="#">
+            <div className={styles.ultima} onClick={()=>changeAba(8)}>
+              
                 <p>Pediatria</p>
-              </a>
+              
             </div>
           </div>
     );

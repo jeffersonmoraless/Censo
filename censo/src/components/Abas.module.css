@@ -17,16 +17,20 @@
    align-items: center;
    justify-content: center;
    padding-left: 10px;
+   color:#043e72 ;
+   font-weight:600;
 }
 .ultima{
     width: 85px;
     background-color: #a9c8d6de;
-    font-size: 0.8em;
+    ;
     text-align: center;
     border-bottom-right-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#043e72 ;
+    font-weight:600;
 }
 .intern{
     width: 85px;
@@ -36,12 +40,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#043e72 ;
+   font-weight:600;
 }
-.intern > a:hover, .prim > a:hover, .ultima > a:hover {
+.intern:hover, .prim:hover, .ultima:hover {
     
-    text-decoration: none;
+    
     font-weight: bolder;
-    font-size: 1em;
+    cursor: pointer;
+    
 }
 .intern:hover, .prim:hover, .ultima:hover {
     

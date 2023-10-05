@@ -1,0 +1,79 @@
+.subBody{
+    width:680px;
+    
+}
+
+h1{
+    color: #145B7B;
+}
+table{
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    border-spacing: 9px;
+    background-color: #d4d6d671;
+    
+        
+
+}
+th{
+    border-radius: 7px;
+}
+.pa{
+    width:200px;
+}
+
+td{
+    width: 79px;    
+    border-radius: 7px;
+    text-align: center;
+    
+    border: solid 1px black;
+    
+}
+tr{
+    
+    line-height: 1.5em;
+}
+
+td > {
+    width: 50px;
+    
+    
+    text-align: center;
+}
+
+tfoot > tr{
+    font-weight: bolder;
+}
+.tx{
+    background-color:#acb9ca59 ;
+    width: 150px;
+    font-size: 2em;
+    color: rgb(2, 133, 2);
+    font-weight: 800;
+    border: none;
+    box-shadow: 5px 5px 7px #acb9ca9f;
+}
+.trtotal{
+    background-color: #acb9ca59;
+     /* Adiciona sombra inferior para criar efeito 3D */
+        /*transition: transform 0.2s, box-shadow 0.2s; /* Adiciona transições suaves */
+}
+/*.trtotal:hover {
+    background-color: #f5f5f5; /* Altera a cor de fundo ao passar o mouse 
+    transform: scale(1.05); /* Aplica um aumento de tamanho para o efeito de botão saltado */
+    /*transition: background-color 0.3s, transform 0.3s; /* Adiciona uma transição suave */
+.total{
+    font-weight: bolder;
+    border: none;
+    box-shadow: 3px 4px 3px#acb9ca9f;
+    
+    /*
+    */
+    
+    
+}
+.pcol{
+    text-align: left;
+    padding-left: 5px;
+}

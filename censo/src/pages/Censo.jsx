@@ -4,17 +4,23 @@ import santaScasas from "../img/santaScasa.webp";
 import proximo from "../img/pp.png";
 import voltar from "../img/voltar.png";
 import Abas from "../components/Abas";
+import { useState } from "react";
+import Tabelas from "../components/Tabelas";
 const Censo = () => {
+    const[aba,setAba]= useState(1)
+  
+    
   return (
     <div className={styles.main}>
       <div className={styles.header}>
         <img src={santaScasas} />
         <h1>Nucleo Interno de Regulação</h1>
       </div>
-      <div>hello word</div>  
+        
       <div className={styles.body}>
+        <Tabelas aba={aba}/>
         <div className={styles.subBody}>
-          <table border={1}>
+        {/*<table border={1}>
             <thead>
               <th className={styles.pa}>Pronto Atendimento</th>
               <th className={styles.inter}>Leitos</th>
@@ -70,8 +76,8 @@ const Censo = () => {
                 </td>
               </tr>
             </tfoot>
-          </table>
-          <Abas/>
+          </table>*/}
+          <Abas aba={aba} setAba={setAba}/>
         </div>
       </div>
 
