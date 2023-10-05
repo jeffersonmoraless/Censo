@@ -11,13 +11,13 @@ const Censo = () => {
         <img src={santaScasas} />
         <h1>Nucleo Interno de Regulação</h1>
       </div>
-
+      <div>hello word</div>  
       <div className={styles.body}>
         <div className={styles.subBody}>
           <table border={1}>
             <thead>
               <th className={styles.pa}>Pronto Atendimento</th>
-              <th>Leitos</th>
+              <th className={styles.inter}>Leitos</th>
               <th>Ocupados</th>
               <th>Livres</th>
               <th>Taxa De Ocupação</th>

@@ -13,7 +13,8 @@
 
 }
 .subBody{
-    width:660px
+    width:680px;
+    
 }
 
 h1{
@@ -34,8 +35,9 @@ th{
 .pa{
     width:200px;
 }
+
 td{
-    width: 70px;
+    width: 79px;    
     border-radius: 7px;
     text-align: center;
     
