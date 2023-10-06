@@ -18,8 +18,24 @@ const Censo = () => {
       </div>
         
       <div className={styles.body}>
-        <Tabelas aba={aba}/>
         <div className={styles.subBody}>
+      {
+        aba===1?<Tabelas aba={aba} setor={"Pronto Atendimento"} quarto01={'Sala Amarela'}quarto02={'Sala Vermelha'}quarto03={'Observação'}/>:
+        aba===2?<Tabelas aba={aba} setor={"Uti Adulto"} quarto01={'Leitos Sus'}quarto02={'Leitos PT'}quarto03={'Bloqueados'}/>:
+        aba===3?<Tabelas aba={aba} setor={"Maternidade"} quarto01={'Leitos'}quarto02={'Isolamento'}quarto03={'RN / Acom'} />:
+        aba===4?<Tabelas aba={aba} setor={"Pré Parto"} quarto01={'Leitos Sus'}quarto02={'Leitos PTT'}quarto03={'Observação'} />:
+        aba===5?<Tabelas aba={aba} setor={"Particular 2"} quarto01={'Leitos Sus'}quarto02={'Isolamento'}/>:
+        aba===6?<Tabelas aba={aba} setor={"Particular 3"} quarto01={'Leitos AP'}quarto02={'Ambulatorio'}/>:
+        aba===7?<Tabelas aba={aba} setor={"Uti Neonatal"} quarto01={'Leitos Uti Neo'}quarto02={'Leitos Uti Ped'}quarto03={'Uci'} />:
+        aba===8?<Tabelas aba={aba} setor={"Pediatria"} quarto01={'Leitos Sus'}quarto02={'isolamento'}quarto03={'Acomp'} />:<></>
+
+        
+        
+          
+        
+
+      }
+        
         {/*<table border={1}>
             <thead>
               <th className={styles.pa}>Pronto Atendimento</th>
